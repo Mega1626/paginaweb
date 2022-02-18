@@ -1,46 +1,166 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>WEBSOFT ALEGARY</title>
-<link rel="shortcut icon" href="Logo.jpg">
-<style type="text/css">
-	@font-face{
-		font-family: Extreme;
-		src: url(Extreme.ttf);
-	}
-	h1{
-		text-align: center;
-		font-family: Extreme;
-		font-size: 85px;
-		color:  #154360 ;
-	}
-	body{
-		background : url("https://img.freepik.com/foto-gratis/espacio-diseno-papel-textura-fondo_53876-42312.jpg");
-		background-size: cover; 
-		background-attachment: fixed;
-	}
-	h2{
-		font-family: Roboto;
-		font-size: 30px;
-		color: #154360 ;
-		text-align: center;
-	}
-	p{
-		color: black;
-		font-family: Arial;
-		font-size: 20px;
-		text-align: center;
-	}
-</style>
+	<link rel="shortcut icon" href="Logo.jpg">
+	<style type="text/css">
+		.container {
+			/* Content is centered horizontally */
+			align-items: center;
+			display: flex;
+			justify-content: center;
+		}
+
+		.container__column {
+			/* Content is centered vertically */
+			align-items: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			/* Make all columns have the same width */
+			flex: 1;
+
+			/* OPTIONAL: Space between columns */
+			margin: 0 8px;
+
+			/* OPTIONAL: Border */
+			border: 1px solid rgba(0, 0, 0, 0.3);
+			border-radius: 4px;
+		}
+
+		@font-face {
+			font-family: Extreme;
+			src: url(Extreme.ttf);
+		}
+
+		h1 {
+			text-align: center;
+			font-family: Extreme;
+			font-size: 85px;
+			color: #154360;
+		}
+
+		body {
+			background: url("https://img.freepik.com/foto-gratis/espacio-diseno-papel-textura-fondo_53876-42312.jpg");
+			background-size: cover;
+			background-attachment: fixed;
+		}
+
+		h2 {
+			font-family: Verdana;
+			font-size: 30px;
+			color: #154360;
+			text-align: center;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 4px;
+		}
+
+		/* Style the header */
+
+		/* Style the top navigation bar */
+		.topnav {
+			overflow: hidden;
+			background-color: #333;
+		}
+
+		/* Style the topnav links */
+		.topnav a {
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			text-decoration: none;
+			width: 46px;
+			padding-top: 14px;
+			padding-right: 16px;
+			padding-bottom: 14px;
+			padding-left: 16px;
+		}
+
+		/* Change color on hover */
+		.topnav a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+
+		/* Create three equal columns that floats next to each other */
+		.column {
+			float: left;
+			width: 25%;
+			padding: 1%;
+		}
+
+		.row {
+			content: "";
+			display: table;
+			clear: both;
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+		@media screen and (max-width:600px) {
+			.column {
+				width: 100%;
+			}
+		}
+	</style>
 </head>
+
 <body>
-<div><h1><img src="logo2.jpg" width="80" height="60">WEBSOFT ALEGARY<img src="logo2.jpg" width="80" height="60"></h1></div>
-<h2>Misión</h2>
-<p>Crear productos de software que respondan, evolucionen y potencien el negocio de nuestros clientes y sus oportunidades en el mercado, siempre basados en nuestros valores empresariales.</p>
-</p>
-<h2>Visión</h2>
-<p>Identificarnos como la mejor empresa de Software Nacional con la confianza de las empresas con mayor crecimiento.</p>
-<h2>Gustos y pasatiempos</h2>
-<div align="right"><img src="WebS.jpg" width="150" height="60"/></div>
+
+	<div>
+		<h1><img src="logo2.jpg" width="80" height="60">WEBSOFT ALEGARY<img src="logo2.jpg" width="80" height="60"></h1>
+	</div>
+
+	<div class="column">
+<h2>Equipo de trabajo</h2>
+<p style="color: black; font-family: Verdana ; text-align: justify;">Alexis Eduardo Meraz Avilez</p>
+<p style="color: black; font-family: Verdana; text-align: justify;">Alejandro Marin Rivera</p>
+<p style="color: black; font-family: Verdana ; text-align: justify;">Edgar Enrique Ruiz Bejar</p>
+<p style="color: black; font-family: Verdana; text-align: justify;">Yair Ezequiel Carreon Rede</p>
+
+
+
+	</div>
+	<div class="column">
+		<h2>Misión</h2>
+		<p style="color: black; font-family: Verdana; text-align: justify;">Crear productos de software que respondan, evolucionen y potencien
+			el negocio de nuestros clientes y sus oportunidades en el mercado, siempre basados en nuestros valores
+			empresariales.</p>
+		</p>
+	</div>
+	<div class="column">
+		<h2>Visión</h2>
+		<p style="color: black; font-family: Verdana; text-align: justify;">Identificarnos como la mejor empresa de Software Nacional con la
+			confianza de las empresas con mayor crecimiento.</p>
+	</div>
+	<div class="column">
+		<h2>Gustos y pasatiempos</h2>
+		<p style="color: black; font-family: Verdana; text-align: justify;">Somos un equipo de profesionales que gusta de realizar unas
+			partidas de ajedrez por las tardes.</p>
+
+	</div>
+
+
+	</div>
+
+
 </body>
+
 </html>
